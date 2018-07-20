@@ -1,7 +1,10 @@
 # Windows image file caches
 Thumbs.db
 ehthumbs.db
-
+Portfolio/obj
+.vs
+Portfolio/node_modules
+Portfolio/src/node_modules
 # Folder config file
 Desktop.ini
 
