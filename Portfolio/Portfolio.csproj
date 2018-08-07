@@ -10,7 +10,7 @@
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <DebugType>full</DebugType>
     <DebugSymbols>true</DebugSymbols>
-    <TypeScriptToolsVersion>2.8</TypeScriptToolsVersion>
+    <TypeScriptToolsVersion>2.6</TypeScriptToolsVersion>
     <UseIISExpress>true</UseIISExpress>
     <IISExpressSSLPort />
     <IISExpressAnonymousAuthentication />
@@ -23,8 +23,11 @@
     <Service Include="{4A0DDDB5-7A95-4FBF-97CC-616D07737A77}" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="css\grayscale.css" />
     <Content Include="dist\bundle.js" />
     <Content Include="index.html" />
+    <Content Include="lib\grayscale.js" />
+    <Content Include="lib\JQuery.js" />
     <Content Include="web.config" />
     <Content Include="webpack.config.js" />
   </ItemGroup>
