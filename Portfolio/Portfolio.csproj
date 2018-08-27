@@ -27,7 +27,11 @@
     <Content Include="dist\bundle.js" />
     <Content Include="index.html" />
     <Content Include="lib\grayscale.js" />
-    <Content Include="lib\JQuery.js" />
+    <Content Include="img\bg-masthead.jpg" />
+    <Content Include="img\bg-signup.jpg" />
+    <Content Include="img\demo-image-01.jpg" />
+    <Content Include="img\demo-image-02.jpg" />
+    <Content Include="img\ipad.png" />
     <Content Include="web.config" />
     <Content Include="webpack.config.js" />
   </ItemGroup>
