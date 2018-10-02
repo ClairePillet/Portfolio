@@ -3,13 +3,14 @@
 // https://github.com/Microsoft/TypeScript/wiki/JSX
 import * as React from "react";
 import * as ReactDOM from "react-dom";
+import { connect } from "react-redux";
 import { Map, Point, Feature, View, Tile as TileLayer, Vector as VectorLayer } from "ol";
-export default class Main extends React.Component<any, any> {
+class Main extends React.Component<any, any> {
     constructor(props: any) {
         super(props);
-      //  this.state = { someValue: this.props.someDefaultValue };
+        //  this.state = { someValue: this.props.someDefaultValue };
     }
-   public render() {
+    public render() {
         let map: any;
         var geoMarker = new Feature({
             type: 'geoMarker',
@@ -20,12 +21,12 @@ export default class Main extends React.Component<any, any> {
             target: document.getElementById('map'),
             loadTilesWhileAnimating: true,
             view: new View({
-             
+
                 zoom: 10,
                 minZoom: 2,
                 maxZoom: 19
             })
-            
+
         });
         map1.render();
         map = (<div id="map" className="map"></div>);
@@ -287,4 +288,15 @@ export default class Main extends React.Component<any, any> {
 
         );
     }
+
 }
+    export default connect(
+        (store: any) => {
+           
+            return {
+               
+            } as any
+        },
+        {  }
+    )(Main as any);
+

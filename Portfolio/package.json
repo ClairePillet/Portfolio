@@ -4,8 +4,6 @@
   "description": "",
   "main": "webpack.config.js",
   "dependencies": {
-    "@types/react": "15.0.0",
-    "@types/react-dom": "15.5.0",
     "awesome-typescript-loader": "^5.2.1",
     "csstype": "^2.5.7",
     "es6-promise": "^4.2.5",
@@ -14,17 +12,25 @@
     "promise-polyfill": "7.1.2",
     "react": "16.5.2",
     "react-dom": "16.5.2",
-    "react-redux": "5.0.7",
-    "redux": "4.0.0",
+    "react-redux": "5.0.6",
+    "reducer-redux": "1.2.1",
+    "redux": "3.7.2",
+    "redux-thunk": "2.2.0",
     "source-map-loader": "^0.2.4",
     "typescript": "2.7.1",
     "webpack": "^4.20.2",
     "webpack-dev-server": "^3.1.9"
   },
   "devDependencies": {
+    "@types/react-redux": "5.0.13",
+    "@types/react": "16.0.25",
+    "@types/react-dom": "15.5.4",
     "@types/jquery": "^3.3.10",
     "@types/openlayers": "^4.6.12",
-    "webpack-cli": "^3.1.2"
+    "webpack-cli": "^3.1.2",
+    "react": "15.6.1",
+    "react-dom": "15.6.1",
+    "typescript": "2.5.2"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
