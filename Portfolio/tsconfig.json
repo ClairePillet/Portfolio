@@ -1,13 +1,14 @@
-﻿{      "compilerOptions": {
-  "target": "es2017",
-  "noImplicitAny": false,
-  "noEmitOnError": true,
-  "removeComments": false,
-    "sourceMap": false,
-    "moduleResolution": "node",
-  "jsx": "react"
-}, "exclude": [
-  "node_modules",
-  "wwwroot"
-]
+﻿{
+    "compilerOptions": {
+        "target": "es5",
+        "noImplicitAny": false,
+        "noEmitOnError": true,
+        "removeComments": false,
+        "sourceMap": false,
+        "moduleResolution": "node",
+        "jsx": "react"
+    },
+    "exclude": [
+        "node_modules"
+    ]
 }

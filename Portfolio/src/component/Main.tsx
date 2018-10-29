@@ -1,6 +1,4 @@
-﻿// A '.tsx' file enables JSX support in the TypeScript compiler, 
-// for more information see the following page on the TypeScript wiki:
-// https://github.com/Microsoft/TypeScript/wiki/JSX
+﻿
 import * as React from "react";
 import * as ReactDOM from "react-dom";
 import { connect } from "react-redux";
@@ -17,6 +15,7 @@ class Main extends React.Component<any, any> {
             geometry: new Point([46, 52])//45°46'50.9"N 4°52'10.3"E
 
         });
+        map = (<div id="map" className="map"></div>);
         var map1 = new Map({
             target: document.getElementById('map'),
             loadTilesWhileAnimating: true,
@@ -29,7 +28,7 @@ class Main extends React.Component<any, any> {
 
         });
         map1.render();
-        map = (<div id="map" className="map"></div>);
+      
         return (
             <div id="page-top">
 
@@ -292,9 +291,11 @@ class Main extends React.Component<any, any> {
 }
     export default connect(
         (store: any) => {
-           
+            const { isLoading, error } = store.ui;
+
             return {
-               
+                isLoading,
+                error
             } as any
         },
         {  }
