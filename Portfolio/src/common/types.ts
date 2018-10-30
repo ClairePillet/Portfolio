@@ -20,7 +20,7 @@ export interface IParamsState {
     build: Boolean,
     dataFirst: ITask[],
     data: ITask[],
-    waitDlg: any;
+    
     links: ILink[],
     tasks: any,
     groupId: string,
@@ -179,14 +179,7 @@ export interface IStoreState {
 }
 export interface IStoreDispatch {
     applyParams(params?: IParams, datas?: ITasksProps, group?: IGroup, filter?: IFilter, ui?: IInterface);
-    applyGroups(params?: IParams, datas?: ITasksProps, group?: IGroup, filter?: IFilter, ui?: IInterface);
-    applyFilter(params?: IParams, datas?: ITasksProps, group?: IGroup, filter?: IFilter, ui?: IInterface);
-    saveFilter(tabs: any);
-    addFilter(NameNewFilter: string, type: any);
-    addGroup(idFilterKey: string, type: any);
-    delFilter(row: any);
-    delGroup(row: any)
-    clearError();
+ 
 }
 export interface IInterface {
     isLoading: boolean;
@@ -195,5 +188,4 @@ export interface IInterface {
     openFilter: boolean;
     scale: any;
     idTask: any;
-    waitDlg: any;
 }

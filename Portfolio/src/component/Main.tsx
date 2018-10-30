@@ -1,4 +1,6 @@
 ﻿
+import { applyParams } from "../actions";
+import MapMe from "./MapMe";
 import * as React from "react";
 import * as ReactDOM from "react-dom";
 import { connect } from "react-redux";
@@ -9,25 +11,24 @@ class Main extends React.Component<any, any> {
         //  this.state = { someValue: this.props.someDefaultValue };
     }
     public render() {
-        let map: any;
-        var geoMarker = new Feature({
-            type: 'geoMarker',
-            geometry: new Point([46, 52])//45°46'50.9"N 4°52'10.3"E
+        //let map: any;
+        //var geoMarker = new Feature({
+        //    type: 'geoMarker',
+        //    geometry: new Point([46, 52])//45°46'50.9"N 4°52'10.3"E
 
-        });
-        map = (<div id="map" className="map"></div>);
-        var map1 = new Map({
-            target: document.getElementById('map'),
-            loadTilesWhileAnimating: true,
-            view: new View({
+        //});
+        //map = (<div id="map" className="map"></div>);
+        //var map1 = new Map({
+        //    target: document.getElementById('map'),
+        //    loadTilesWhileAnimating: true,
+        //    view: new View({
+        //        zoom: 10,
+        //        minZoom: 2,
+        //        maxZoom: 19
+        //    })
 
-                zoom: 10,
-                minZoom: 2,
-                maxZoom: 19
-            })
-
-        });
-        map1.render();
+        //});
+        //map1.render();
       
         return (
             <div id="page-top">
@@ -210,7 +211,7 @@ class Main extends React.Component<any, any> {
                     <div className="container">
                         <div className="row justify-content-center no-gutters mb-5 mb-lg-0">
                             <div className="col-lg-6">
-                                {map}
+                                <MapMe/>
                             </div>
                             <div className="col-lg-6">
                                 <div className="bg-black text-center h-100 project">
@@ -298,6 +299,6 @@ class Main extends React.Component<any, any> {
                 error
             } as any
         },
-        {  }
+        { applyParams }
     )(Main as any);
 
