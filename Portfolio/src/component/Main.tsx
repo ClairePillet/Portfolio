@@ -1,35 +1,19 @@
 ﻿
 import { applyParams } from "../actions";
 import MapMe from "./MapMe";
+import Galerie from "./Galerie";
+
 import * as React from "react";
 import * as ReactDOM from "react-dom";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { connect } from "react-redux";
-import { Map, Point, Feature, View, Tile as TileLayer, Vector as VectorLayer } from "ol";
 class Main extends React.Component<any, any> {
     constructor(props: any) {
         super(props);
         //  this.state = { someValue: this.props.someDefaultValue };
     }
     public render() {
-        //let map: any;
-        //var geoMarker = new Feature({
-        //    type: 'geoMarker',
-        //    geometry: new Point([46, 52])//45°46'50.9"N 4°52'10.3"E
-
-        //});
-        //map = (<div id="map" className="map"></div>);
-        //var map1 = new Map({
-        //    target: document.getElementById('map'),
-        //    loadTilesWhileAnimating: true,
-        //    view: new View({
-        //        zoom: 10,
-        //        minZoom: 2,
-        //        maxZoom: 19
-        //    })
-
-        //});
-        //map1.render();
-      
+       
         return (
             <div id="page-top">
 
@@ -54,6 +38,9 @@ class Main extends React.Component<any, any> {
                                 </li>
                                 <li className="nav-item">
                                     <a className="nav-link js-scroll-trigger" href="#contact">Contact</a>
+                                </li>
+                                <li className="nav-item">
+                                    <div> form de co</div>
                                 </li>
                             </ul>
                         </div>
@@ -198,7 +185,7 @@ class Main extends React.Component<any, any> {
 
                                 <i className="far fa-paper-plane fa-2x mb-2 text-white"></i>
                                 <h2 className="text-white mb-5">Galerie</h2>
-
+                                <Galerie/>
 
 
                             </div>
@@ -211,7 +198,7 @@ class Main extends React.Component<any, any> {
                     <div className="container">
                         <div className="row justify-content-center no-gutters mb-5 mb-lg-0">
                             <div className="col-lg-6">
-                                <MapMe/>
+                              <MapMe/>
                             </div>
                             <div className="col-lg-6">
                                 <div className="bg-black text-center h-100 project">
@@ -229,49 +216,61 @@ class Main extends React.Component<any, any> {
                         <div className="row">
 
                             <div className="col-md-4 mb-3 mb-md-0">
-                                <div className="card py-4 h-100">
+                                <div className="card py-4 h-70">
                                     <div className="card-body text-center">
                                         <i className="fas fa-map-marked-alt text-primary mb-2"></i>
-                                        <h4 className="text-uppercase m-0">Adresse</h4>
-                                        <hr className="my-4" />
-                                        <div className="small text-black-50">71b Avenue Paul Santy 69008 Lyon</div>
-                                    </div>
-                                </div>
-                            </div>
+                                        <h4 className="text-uppercase m-0">Contact</h4>
 
-                            <div className="col-md-4 mb-3 mb-md-0">
-                                <div className="card py-4 h-100">
-                                    <div className="card-body text-center">
-                                        <i className="fas fa-envelope text-primary mb-2"></i>
-                                        <h4 className="text-uppercase m-0">Email</h4>
-                                        <hr className="my-4" />
+                                        <div className="small text-black-50">71b Avenue Paul Santy 69008 Lyon</div>
+                                      
+                                        <div className="small text-black-50">07 81 78 71 24</div>
+                                      
                                         <div className="small text-black-50">
-                                            <a href="#">antykhimera@hotmail.fr</a>
+                                            <a href="#">antykhimera @hotmail.fr</a>
                                         </div>
                                     </div>
                                 </div>
                             </div>
 
+                         
+
+                          
                             <div className="col-md-4 mb-3 mb-md-0">
-                                <div className="card py-4 h-100">
+                                <div className="card py-4 h-70">
                                     <div className="card-body text-center">
                                         <i className="fas fa-mobile-alt text-primary mb-2"></i>
-                                        <h4 className="text-uppercase m-0">Telephone</h4>
+                                        <h4 className="text-uppercase m-0">Réseauw social</h4>
                                         <hr className="my-4" />
-                                        <div className="small text-black-50">07 81 78 71 24</div>
+                                        <div className="social d-flex justify-content-center">
+
+                                            <a href="https://www.facebook.com/antykhimera/" className="mx-2">
+                                                <FontAwesomeIcon  icon="facebook-f"/>
+                                            </a>
+
+                                            <a href="https://discord.gg/ZSUceCu" className="mx-2">
+                                                <FontAwesomeIcon icon="discord"/>
+                                            </a>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
+                          
+                            <div className="col-md-4 mb-3 mb-md-0">
+                                <div className="card py-4 h-70">
+                                    <div className="card-body text-center">
+                                        <i className="fas fa-mobile-alt text-primary mb-2"></i>
+                                        <h4 className="text-uppercase m-0">Satut Associatif</h4>
+                                        <hr className="my-4" />
+                                        <div className="social d-flex justify-content-center">
 
-                        <div className="social d-flex justify-content-center">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                      
 
-                            <a href="https://www.facebook.com/antykhimera/" className="mx-2">
-                                <i className="fab fa-facebook-f"></i>
-                            </a>
-
-                        </div>
-
+                       
                     </div>
                 </section>
 

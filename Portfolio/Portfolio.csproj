@@ -25,6 +25,8 @@
   <ItemGroup>
     <Content Include="css\grayscale.css" />
     <Content Include="dist\bundle.js" />
+    <Content Include="img\Galerie\1.jpg" />
+    <Content Include="img\Galerie\2.jpg" />
     <Content Include="index.html" />
     <Content Include="lib\grayscale.js" />
     <Content Include="img\bg-masthead.jpg" />
@@ -39,7 +41,9 @@
     <TypeScriptCompile Include="src\actions\index.ts" />
     <TypeScriptCompile Include="src\common\constant.ts" />
     <TypeScriptCompile Include="src\common\types.ts" />
+    <TypeScriptCompile Include="src\component\Galerie.tsx" />
     <TypeScriptCompile Include="src\component\Main.tsx" />
+    <TypeScriptCompile Include="src\component\MapMe.tsx" />
     <TypeScriptCompile Include="src\index.tsx" />
     <TypeScriptCompile Include="src\reducer.ts" />
   </ItemGroup>

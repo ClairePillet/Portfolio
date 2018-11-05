@@ -5,7 +5,10 @@ import { Provider } from "react-redux";
 import thunk from "redux-thunk";
 import rootReducer from "./reducer";
 import  Main from "./component/Main";
+import { library } from '@fortawesome/fontawesome-svg-core'
+import { fab, faFacebookF,faDiscord} from '@fortawesome/free-brands-svg-icons'
 
+library.add(fab, faFacebookF, faDiscord)
 const composeEnhancers =  redux.compose;
 
 const store = redux.createStore(
